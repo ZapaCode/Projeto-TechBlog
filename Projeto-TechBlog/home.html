@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="estrutura.css">
+        <title>TechBlog</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="imagens/icons8-controle-48.png" />
+
+        <script type="text/javascript" >
+            function verificaremail(){
+              var email_informado = inscricao.email.value;
+              var indice = email_informado.search("@b"); 
+              if (indice == -1){
+                alert("Por favor, informe um Email v\u00e1lido");
+                return false;
+              }
+              else{
+                return true;
+              }
+            }
+        
+            function formatarnascimento(){
+              var nasc_informado = inscricao.nasc.value;
+              var nro_barras = nasc_informado.split("/").length -1;
+              while (nro_barras != 0) {
+                nasc_informado = nasc_informado.replace("/","");
+                var nro_barras = nasc_informado.split ("/").length -1;
+              }
+              dia = nasc_informado.substring(0,2);
+              mes = nasc_informado.substring(2,4);
+              ano = nasc_informado.substring(4,8);
+              var nasc_novo_valor = dia + "/" + mes + "/" + ano;
+              inscricao.nasc.value = nasc_novo_valor;
+            }
+          </script>
+    </head>
+
+    <body>
+        <!--Cabeçalho-->
+        <div id='cabeçalho'>
+            <div id='logo'>
+                <h1><img src="imagens/icons8-controle-48.png" id='imagemlogo'> Tec<span class='branco'>Blog</span></h1>
+            </div>
+            
+            <div id='menu'>
+                <a href='home.html'>Home</a>
+                <a href='jogos.html'>Jogos</a>
+                <a href='celulares.html'>Celulares</a>
+                <a href='informatica.html'>Inform\u00e1tica</a>
+                <a href='eletronica.html'>Eletr\u00f4nica</a>
+            </div>
+
+        </div>
+        <!--Conteúdo da página-->
+        <div id='areaprincipal'> 
+            <div id='postagens'>
+                <div class='postagem2'>
+                    <h2 id='titulohome'>Quem somos n\u00f3s</h1>
+                    <img width='620px' src='imagens/imagem1.jpg'><br><br>
+                    <p id='textosobresite'>
+                        Procuramos filtrar as not\u00edcias que achamos relevantes para o seu dia-dia,
+                        chega de perder tempo com not\u00edcias que s\u00e3o tediosas, e principalmente cheias de
+                        textos contando tudo muito detalhadamente, aqui voc\u00ea encontrar\u00e1 a praticidade, 
+                        onde faremos resumos sobre o conte\u00fado, sem perder o fio da meada, e poupando o
+                        o vosso precioso tempo de leituras chatas e macivas, viemos com a itens\u00e3o de trazer
+                        a praticidade para voc\u00ea, amante da tecnologia, espero que goste do nosso Conte\u00fado
+                        selecionado. BOA LEITURA!!!!!!!
+                    </p>
+                </div>
+            </div>
+            <!--Conteúdo Lateral-->
+            <div id='arealateral'>
+                <div class='conteudolateral'>
+                    <h3>Postagens recentes</h3>
+                </div> 
+                <div  class='postagenslateral'>
+                    <p><b>John McAfee, pioneiro dos softwares antiv\u00edrus, morre aos 75 anos</b></p>
+                </div> 
+                <div  class='postagenslateral'>
+                    <p><b>Brasil \u00e9 alvo preferido dos hackers na Am\u00e9rica Latina</b></p>
+                </div> 
+                <br><br>
+                
+                <div class='conteudolateral'>
+                    <h3>Gostou? Ent\u00e3o envie-nos o que achou interressante</h3><br>
+                    <article>
+                        <form name='formulário' action='./formulario.php' method="POST">
+                            <label for="fname">Seu Nome:</label><br>
+                            <input type="text" id="nome" name="nome"><br><br>
+                            <label for="lname">Seu Email:</label><br>
+                            <input type="email" id="email" name="email"><br><br>
+                            <label for="country">Pa\u00eds de Origem:</label><br>
+                            <select id="pais" name="pais">
+                                <option value="australia">Brasil</option>
+                                <option value="canada">Europa</option>
+                                <option value="usa">Am\u00e9rica do Norte</option>
+                            </select><br><br>
+                            Data de Nascimento:
+                            <input type="date" id="nascimento" name="nascimento"><br><br>
+                            <textarea id="areatexto" name="areatexto" placeholder="Escreva para nos o que gostaria de ver aqui" style="height:200px"></textarea> <br>
+                            <input id='botaoenviar' type="submit" value='Enviar'><br><br>
+                        </form>
+                    </article>
+                    <div>
+                        <h3>Siga nossas Redes Sociais</h3>
+                       <a href="https://www.instagram.com/bezappa/?hl=pt-br">
+                        <img class='imagens' src="imagens/instagram imagem.jpg">
+                        </a>
+                        <a href="https://www.linkedin.com/in/bernardo-zaparoli-1186a5205/">
+                            <img class='imagens' src="imagens/linkedln imagem.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id='rodape'>
+
+            </div>
+            <div id='direitos'>
+                <h1>Todas as not\u00edcias s\u00e3o retiradas de sites confi\u00e1veis ao p\u00fablico</h2>
+            </div>
+        </div>
+        <hr>
+    </body>
+
+
+</html>

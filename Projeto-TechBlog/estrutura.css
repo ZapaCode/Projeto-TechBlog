@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size:1em;
+    font-family:'Trebuchet MS, Helvetica, sans-serif'; 
+    background: #ffffff; 
+}
+/*Parte do cabeçalho */
+#cabeçalho {
+    background-color: rgb(33, 100, 163);
+    padding: 15px;
+    text-align: center;
+}
+
+#logo, #menu {
+    padding:10px;
+}
+
+/*Parágrafos*/
+h1{
+    color:black
+}
+
+h2{
+    color:rgb(33, 100, 163)
+}
+
+.branco{
+    color:rgb(255, 255, 255)
+}
+
+h3{
+    color: rgb(33, 100, 163);
+    background-color: rgb(161, 198, 212);
+    padding:5px;
+}
+
+
+/*Links*/
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color:rgb(33, 100, 163);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#cabeçalho a:link, a:visited{
+    color:rgb(0, 0, 0);;
+    padding: 8px 12px;
+}
+
+#cabeçalho a:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+
+/*Área do conteúdo*/
+#areaprincipal {
+    width:920px;
+    margin:0 auto;
+    padding: 15px;
+}
+
+#titulohome{
+    margin: 5px;
+    padding:5px;
+}
+
+#textosobresite{
+    color: rgb(33, 100, 163);
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: center;
+}
+
+#postagens{
+    width:660px;
+    float:left;
+}
+
+#arealateral{
+    width:240px;
+    float:right;
+}
+
+#rodape{
+    clear:both;
+    text-align: center;
+    padding:15px;
+}
+
+.postagem2{
+    padding:20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+#direitos{
+    color: rgb(33, 100, 163);
+    text-align: center;
+    padding:10px ;
+    background-color:rgb(33, 100, 163);
+}
+
+.datapostagem{
+    font-size: 0.8em;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom:10px;
+    display: block;
+}
+
+/*Lateral da página*/
+.conteúdolateral{
+    background:rgb(128, 127, 127);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.postagenslateral{
+    font-size: 1em;
+    padding: 5px;
+    border-bottom: 1px solid rgb(128, 127, 127);
+}
+
+#areadetexto{
+    text-align:left;
+    
+}
+
+#imagemlogo{  
+    margin-top: auto;
+}
+
+.imagens{
+    margin: 10px;
+    width: 30%;
+}
+
+#botaoenviar{
+    color: white;
+    background:rgb(33, 100, 163);
+    font-size:1em;
+}
+
+/*Noticias Jogos*/
+
+.titulonoticia{
+    margin: 20px 10px;
+    text-align:center;
+}
+
+.textonoticia{
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+.imagemjogo{
+    margin: 25px;
+    text-align: center;
+}
+
+.fonte{
+    margin: 20px;
+    text-align: center;
+}
+
+hr{
+    border:0;
+  border-bottom: 30px solid rgb(33, 100, 163);
+  height: 3px;
+}
+
+/*Celulares*/
+#celularimagem{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}

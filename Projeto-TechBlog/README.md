@@ -1,0 +1,2 @@
+Este projeto, foi finalizado, e entregue para avaliação referente ao conteúdo estudado
+em HTML e CSS e alguns comando em PHP e JavaScript. O intuito deste projeto, é de exercitar e aplicar os comandos vistos em aula. Nada com âmbito profissional.
